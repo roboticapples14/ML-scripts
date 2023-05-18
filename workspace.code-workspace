@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"name": "02450Toolbox_Python",
+			"path": "../02450Toolbox_Python"
+		},
+		{
+			"name": "ML-scripts",
+			"path": "."
+		}
+	],
+	"settings": {}
+}
