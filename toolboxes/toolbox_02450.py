@@ -1,6 +1,6 @@
 ''' Collection of functions and tools for the needs of 02450 Introduction to Machine Learning course.'''
 #from pylab import *
-import sklearn.metrics.cluster as cluster_metrics
+from sklearn.metrics import normalized_mutual_info_score
 import numpy as np
 import matplotlib.pyplot as plt
 from sklearn import model_selection, linear_model
@@ -520,7 +520,7 @@ def clusterval(y, clusterid):
       Rand       Rand index.
       Jaccard    Jaccard coefficient.
     '''
-    NMI = cluster_metrics.supervised.normalized_mutual_info_score(y,clusterid)
+    NMI = normalized_mutual_info_score(y,clusterid)
     
     #y = np.asarray(y).ravel(); clusterid = np.asarray(clusterid).ravel()
     C = np.unique(y).size; K = np.unique(clusterid).size; N = y.shape[0]

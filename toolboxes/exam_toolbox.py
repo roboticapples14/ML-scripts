@@ -6,8 +6,8 @@ Author: Lukas Leindals / Hans Christian Lundberg
 __version__ = "Revision: 2021-12-11"
 
 from scipy.spatial import distance
-import toolbox_extended as te  # pip install --ignore-installed ml02450
-import toolbox_02450 as tb
+import toolboxes.toolbox_extended as te  # pip install --ignore-installed ml02450
+import toolboxes.toolbox_02450 as tb
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
